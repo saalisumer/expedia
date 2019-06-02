@@ -71,6 +71,7 @@ class EventCell: UITableViewCell
         self.dateEvent.text = ""
         self.imageViewEvent.image = nil
         self.favoriteImage.isHidden = true
+        NotificationCenter.default.removeObserver(self)
     }
 
     override func awakeFromNib() {
